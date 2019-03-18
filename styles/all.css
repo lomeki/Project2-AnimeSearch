@@ -1,0 +1,288 @@
+/* GENERAL: */
+
+/*
+THEME COLORS:
+    GOLD = #e1b643
+    LIGHT GOLD = #ebeea4
+    RED = #a32a32
+    DARK RED = #391e21
+*/
+
+@font-face {
+    font-family: "Calling Angels";
+    src: url("../fonts/billy-argel_calling-angels-personal-use/Calling Angels Personal Use.ttf");
+    /* Font Source: https://www.fontspace.com/billy-argel/calling-angels-personal-use */
+}
+
+@font-face {
+    font-family: "Youth Touch";
+    src: url("../fonts/herofonts_youth-touch-demo/Youth-Touch.ttf");
+    /* Font Source: https://www.fontspace.com/herofonts/youth-touch-demo */
+}
+
+@font-face {
+    font-family: "Just for Fun";
+    src: url("../fonts/Justforfun-Regular.otf");
+    /* Font Source: https://www.fontspace.com/merrijart/justforfunfont */
+}
+
+body {
+    margin: 0;
+    background-color: #e1b643;
+    font-family: "Just for Fun";
+    font-size: 16pt;
+}
+
+.content {
+    padding: 30px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* HEADER: */
+
+#header-title {
+    font-size: 64pt;
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: auto;
+    float: left;
+    font-family: "Calling Angels";
+}
+
+.header-img {
+    float: left;
+    height: 150px;
+    padding-left: 20px;
+}
+
+header {
+    border-bottom: 6px solid black;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 30 30 0 30;
+    height: 150px;
+    background: #ebeea4;
+}
+
+.header-rightbox {
+    float: right;
+}
+
+.header-rightbox h2 {
+    margin-top: 50px;
+    font-size: 30pt;
+    font-family: "Youth Touch";
+}
+
+/* NAVIGATION BAR: */
+/* Much of this was reused from my Project 1 */
+
+nav ul li {
+    display: block;
+    text-align: center;
+    background: #a32a32;
+    margin: 4px;
+    padding: 5px;
+    border: 2px solid #391e21;
+    width: 150px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav li:hover {
+    background-color: #391e21;
+}
+
+nav {
+    text-align: center;
+    padding: auto;
+}
+
+/* HOME PAGE: */
+
+.home-box {
+    display: flex;
+    height: 200px;
+    margin: auto;
+    border: 3px solid black;
+    background: #a32a32;
+}
+
+.home-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    text-align: center;
+    font-size: 36pt;
+    text-decoration: none;
+    margin: auto;
+    color: #ebeea4;
+    padding: 20px;
+    height: calc(100% - 40px);
+}
+
+.home-box a:hover {
+    background-color: #ebeea4;
+    color: black;
+}
+
+#home {
+    display: flex;
+    margin: 0 50px;
+}
+
+.add-box a {
+    width: auto;
+}
+
+.add-box {
+    margin: 50px;
+}
+
+
+/* SEARCH PAGE: */
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+label {
+    display: block;
+    font-size: 24pt;
+}
+
+#keywords {
+    width: 400px;
+    height: 30px;
+    font-size: 12pt;
+}
+
+.submit {
+    width: 200px;
+    height: auto;
+    font-size: 18pt;
+    background: #ebeea4;
+    color: #391e21;
+    font-family: "Just for Fun";
+    padding: 5px;
+}
+
+.submit:hover {
+    background: #a32a32;
+    color: #ebeea4;
+}
+
+.check {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.search-box, .form-input {
+    display: block;
+    padding: 20px;
+    margin: auto;
+}
+
+#advanced-form {
+    display: flex;
+    background: #ebeea4;
+    margin: 20px 40px;
+}
+
+.advanced-title {
+    color: #a32a32;
+    text-decoration: underline #a32a32;
+}
+
+.advanced-title:hover {
+    color: #391e21;
+    text-decoration-color: #391e21;
+}
+
+/* FULL LIST PAGE: */
+
+table {
+    padding: 20px;
+    border-collapse: collapse;
+    border: 4px solid black;
+    margin: 10px 60px;
+    background: #ebeea4;
+}
+
+tr {
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    margin: 0;
+    padding: 5px;
+}
+
+.table-titles {
+    background: #a32a32;
+}
+
+/* ADD ENTRY PAGE: */
+
+#add {
+    display: flex;
+    margin-left: 20px;
+}
+
+#add-content form {
+    text-align: center;
+    background: #ebeea4;
+    width: 500px;
+    align-content: center;
+    margin: 0;
+}
+
+#add-content .form-input {
+    padding: 30px;
+}
+
+#add-content img {
+    width: 400px;
+}
+
+#add-submit {
+    word-wrap: break-word;
+    white-space: normal;
+    background: #a32a32;
+}
+
+
+/* FOOTER: */
+
+footer {
+    background: #391e21;
+    color: #ebeea4;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+}
+
+footer a {
+    color: #ebeea4;
+}
+
+footer p {
+    padding-top: 10px;
+    margin: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
